@@ -1,0 +1,164 @@
+{
+  "workbench.colorTheme": "Violet Ultima",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "vim.easymotion": true,
+  "vim.foldfix": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "%"],
+      "commands": [
+        {
+          "command": "editor.emmet.action.matchTag"
+        }
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      // does not work
+      "before": ["<leader>", "%"],
+      "commands": [
+        {
+          "command": "editor.emmet.action.matchTag"
+        }
+      ]
+    }
+  ],
+  "[sql]": {
+    "editor.fontFamily": "monospace"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop",
+    "editor.formatOnSave": false
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.scrollBeyondLastLine": false,
+  "editor.guides.bracketPairs": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "ruby.rubocop.executePath": "/Users/divx/.rbenv/shims/",
+  "scm.inputFontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.glyphMargin": true,
+  "explorer.openEditors.visible": 0,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+
+  // Paste Image
+  "pasteImage.namePrefix": "${currentFileNameWithoutExt}_", // デフォルトのファイル名の頭にmarkdown名をつける
+  "pasteImage.path": "${currentFileDir}/img", //(markdownファイルのディレクトリ内)/img内に画像を保存
+  "pasteImage.prefix": "./", //pathの調整
+  "pasteImage.showFilePathConfirmInputBox": true, // ペースト時にファイル名を変更する
+  "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+  "editor.inlineSuggest.enabled": true,
+  "workbench.editor.showTabs": "single",
+  "javascript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+
+  "files.insertFinalNewline": true,
+  "go.formatTool": "gofmt",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[markdown]": {
+    // markdownは 行末の半角スペース2つで改行なので、消さないようにする
+    "files.trimTrailingWhitespace": false
+  },
+  "[yaml]": {
+    // OpenAPIのDescriptionは 行末の半角スペース2つで改行なので、消さないようにする
+    "files.trimTrailingWhitespace": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "window.zoomLevel": -1,
+  "editor.fontFamily": "'Monaspace Argon', Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+  "editor.lineNumbers": "relative",
+  "workbench.editor.empty.hint": "hidden",
+  "diffEditor.renderSideBySide": false,
+  "security.promptForLocalFileProtocolHandling": false,
+  "terminal.integrated.scrollback": 10000,
+  "go.toolsManagement.autoUpdate": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "i18n-ally.displayLanguage": "en",
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "is:open assignee:${user} repo:${owner}/${repository}",
+      "groupBy": ["milestone"]
+    },
+    {
+      "label": "Created Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    },
+    {
+      "label": "Recent Issues",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+    }
+  ],
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "git.confirmSync": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "java.referencesCodeLens.enabled": true,
+  "formatFiles.extensionsToInclude": "html,js,java",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
